@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Contact information for the Book Club">
+	<meta name="author" content="Your Name">
+	<meta name="keywords" content="book club, reading, literature, books">
+    <title>Contact Us - Book Club</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Link to external JavaScript file -->
+    <script src="../js/myJS.js" defer></script>  
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Get in Touch</h2>
+            <form action="mailto:info@bookclub.com?subject=Contact%20Form" onsubmit="return validateForm();" method="post" 
+            onkeydown="handleKeydown(event)" novalidate>
+
+              <fieldset>
+                <legend>Contact information</legend> 
+                <label for="name">Name:</label>
+
+                <input type="text" id="name" name="name" required oninput="updatePreview(); checkValidityState(this)"
+                onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+                
+                <!-- Input type text with this pattern="UO[0-9]{6}" -->
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" pattern="UO[0-9]{6}" oninput="checkValidityState(this)">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" oninput="updatePreview()">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required oninput="updatePreview()">
+              </fieldset>  
+                <!-- A group of radio buttons -->
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <label for="referral" class="option">
+                      Referral
+                      <input type="radio" id="referral" name="referral" value="referral" onchange="updatePreview()">  
+                    </label>
+                    <label for="social" class="option">
+                        Social Media
+                      <input type="radio" id="social" name="referral" value="social" onchange="updatePreview()">
+                    </label>
+                    <label for="search" class="option">
+                        Search Engine
+                        <input type="radio" id="search" name="referral" value="search" onchange="updatePreview()">
+                    </label>
+                </fieldset>
+                <!-- A group of checkboxes-->
+                <fieldset>
+                    <legend>Interests</legend>
+                    <label for="fiction" class="option">
+                        Fiction
+                        <input type="checkbox" id="fiction" name="interests" value="fiction" onchange="updatePreview()">
+                    </label>
+                    <label for="nonfiction" class="option">
+                        Non-Fiction
+                        <input type="checkbox" id="nonfiction" name="interests" value="nonfiction" onchange="updatePreview()">
+                    </label>
+                    <label for="mystery" class="option">
+                        Mystery
+                        <input type="checkbox" id="mystery" name="interests" value="mystery" onchange="updatePreview()">
+                    </label>
+                <!-- A drop-down list (select) containing options grouped into two groups -->
+                 <label for="category">Category:</label>
+                 <select id="category" name="category" onchange="updatePreview()">
+                     <option value="">Select a category</option>
+                    <optgroup label="Fiction">
+                        <option value="novel" >Novel</option>
+                        <option value="shortstories">Short Stories</option>
+                    </optgroup>
+                    <optgroup label="Non-Fiction">
+                        <option value="biography">Biography</option>
+                        <option value="history">History</option>
+                    </optgroup>
+                 </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Your message</legend>
+                 <label for="message">Message:</label>
+                 <textarea id="message" name="message" required oninput="updatePreview()">Type your message here</textarea>
+                 </fieldset>
+
+                  <!-- Error container -->
+                  <div id="error-box" class="error-box"></div>
+                
+                 <button class="btn" id="submit-btn" type="submit">Send Message</button>
+                 <button class="btn" id="reset-btn" type="reset">Clear form </button>
+            </form>
+        </section>
+
+        <!-- Preview container -->
+        <section id="preview">
+        <h2>Live Preview</h2>
+        <div id="preview-content">
+            <p>Form preview will appear here.</p>
+        </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="../index.html">
+        <img src="../resources/images/bookclublogo.jpg" alt="Book Club logo" title="Book Club" width="100" height="100">
+        <p>&copy; 2026 Book Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

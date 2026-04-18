@@ -1,0 +1,70 @@
+{
+  "en": {
+    "page.title": "Welcome to the Book Club",
+    "pages.events.title": "Upcoming Events",
+   
+    "navigation.about": "About Us",
+    "navigation.mission": "Our Mission",
+    "navigation.favouriteBooks": "Books We Love",
+    "navigation.events": "Upcoming Events",
+    "navigation.contact": "Contact Us",
+
+    "sections.about.title": "About Us",
+    "sections.about.description": "We are a group of book enthusiasts who meet monthly to discuss our latest reads. Our club is open to all book lovers, and we welcome new members with open arms.",
+
+    "sections.mission.title": "Our Mission",
+    "sections.mission.description": "Our mission is to foster a love of reading and create a community of book lovers who can share their thoughts and ideas.",
+
+    "sections.books.title": "Books We Love",
+    "books.mockingbird": "\"To Kill a Mockingbird\" by Harper Lee",
+    "books.nineteenEightyFour": "\"1984\" by George Orwell",
+    "books.prideAndPrejudice": "\"Pride and Prejudice\" by Jane Austen",
+    "books.greatGatsby": "\"The Great Gatsby\" by F. Scott Fitzgerald",
+
+    "sections.events.title": "Upcoming Events",
+    "sections.events.description": "Join us for our",
+    "sections.events.nextMeetingLink": "next meeting",
+
+    "sections.contact.title": "Contact Us",
+    "sections.contact.description": "If you have any questions or would like to join our club, please use",
+    "sections.contact.formLink": "this form",
+
+    "footer.logoAlt": "Book Club logo",
+    "footer.logoTitle": "Book Club",
+    "footer.rights": "© 2026 Book Club. All rights reserved."
+  },
+
+  "es": {
+    "page.title": "Bienvenido al Club de Lectura",
+    "pages.events.title": "Próximos Eventos",
+    "navigation.about": "Sobre nosotros",
+    "navigation.mission": "Nuestra misión",
+    "navigation.favouriteBooks": "Libros que nos encantan",
+    "navigation.events": "Próximos eventos",
+    "navigation.contact": "Contacto",
+
+    "sections.about.title": "Sobre nosotros",
+    "sections.about.description": "Somos un grupo de entusiastas de la lectura que se reúne mensualmente para comentar nuestras últimas lecturas. Nuestro club está abierto a todos los amantes de los libros y damos la bienvenida a nuevos miembros con los brazos abiertos.",
+
+    "sections.mission.title": "Nuestra misión",
+    "sections.mission.description": "Nuestra misión es fomentar el amor por la lectura y crear una comunidad de lectores que puedan compartir sus ideas y reflexiones.",
+
+    "sections.books.title": "Libros que nos encantan",
+    "books.mockingbird": "\"Matar a un ruiseñor\" de Harper Lee",
+    "books.nineteenEightyFour": "\"1984\" de George Orwell",
+    "books.prideAndPrejudice": "\"Orgullo y prejuicio\" de Jane Austen",
+    "books.greatGatsby": "\"El gran Gatsby\" de F. Scott Fitzgerald",
+
+    "sections.events.title": "Próximos eventos",
+    "sections.events.description": "Únete a nuestra",
+    "sections.events.nextMeetingLink": "próxima reunión",
+
+    "sections.contact.title": "Contacto",
+    "sections.contact.description": "Si tienes alguna pregunta o te gustaría unirte a nuestro club, por favor utiliza",
+    "sections.contact.formLink": "este formulario",
+
+    "footer.logoAlt": "Logotipo del Club de Lectura",
+    "footer.logoTitle": "Club de Lectura",
+    "footer.rights": "© 2026 Club de Lectura. Todos los derechos reservados."
+  }
+}

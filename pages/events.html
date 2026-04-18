@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Book Club event page">
+	<meta name="author" content="Your Name">
+	<meta name="keywords" content="book club, reading, literature, books">
+    <title>Upcoming Events - Book Club</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/i18n/i18n.js" defer></script>
+</head>
+<body>
+    <header class="header-bar">
+        <h1 data-i18n="pages.events.title">Upcoming Events</h1>
+        <select id="language-switcher" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+    </header>
+    <main>
+        <section>
+        <p>
+        Next meeting:
+        <span id="event-date" data-date="2026-07-15"></span>
+       </p>
+       <p>
+        Next book: Ham on Rye by Charles Bukowski
+       </p><p>
+        Special offer: <span id="book-price" data-price="19.99"></span> 
+       </p>
+</section>
+
+        <section>
+            <h2><dfn>Monthly Meeting</dfn></h2>
+            <p>Date: <em>15th July 2026</em></p>
+            <p>Location: <em>Local Library</em></p>
+            <p>Description: Discussion of <cite>Ham on Rye</cite></p>
+        </section>
+       
+        <section>
+            <h2><dfn>Author Talk</dfn></h2>
+            <p>Date: <em>30th August 2026</em></p>
+            <p>Location: <em>Community Center</em></p>
+            <p>Description: Special talk with local author <cite>Jane Doe</cite></p>
+        </section>
+
+        <section>
+            <h2><dfn>Calendar</dfn></h2>
+            <table>
+                <thead>
+                  <tr>
+                      <th>Date</th>
+                      <th colspan="2">Event Details</th>
+                  </tr>
+                </thead>
+                <tbody> 
+                 <tr>
+                    <td rowspan="2">15th July 2026</td>
+                    <td><cite>To Kill a Mockingbird</cite> Discussion</td>
+                    <td>Local Library</td>
+                 </tr>
+                 <tr>
+                    <td colspan="2">Refreshments provided</td>
+                </tr>
+                 <tr>
+                    <td>30th August 2026</td>
+                    <td>Author Talk with Jane Doe</td>
+                    <td>Community Center</td>
+                 </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+    <figure>
+       <a href="../index.html">
+           <img src="../resources/images/bookclublogo.jpg" alt="Book Club logo" title="Book Club" width="100" height="100">
+       </a>
+       <figcaption>Book Club Logo</figcaption>
+     </figure>
+       <p>&copy; 2026 Book Club. All rights reserved.</p>
+    </footer>
+</body>
+</html>

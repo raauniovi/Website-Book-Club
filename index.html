@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Book Club main page">
+	<meta name="author" content="Your Name">
+	<meta name="keywords" content="book club, reading, literature, books">
+	<title>Book Club</title>
+    <!-- Link to external CSS file -->
+     <link rel="stylesheet" href="./css/styles.css">   
+    <link rel="stylesheet" href="./css/single-page.css"> 
+    <!--Adds internationalisation support-->
+    <script src="./js/i18n/i18n.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-bar">
+            <h1 data-i18n="page.title">Welcome to the Book Club</h1>
+
+            <select id="language-switcher" onchange="switchLanguage(this.value)">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+            </select>
+        </div>  
+
+        <nav>
+            <ul>
+                <li><a href="#about" data-i18n="navigation.about">About Us</a></li>
+                <li><a href="#mission" data-i18n="navigation.mission">Our Mission</a></li>
+                <li><a href="#books" data-i18n="navigation.favouriteBooks">Books We Love</a></li>
+                <li><a href="#events" data-i18n="navigation.events">Upcoming Events</a></li>
+                <li><a href="#contact" data-i18n="navigation.contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="responsive">
+        <section id="about">
+            <h2 data-i18n="sections.about.title">About Us</h2>
+            <p data-i18n="sections.about.description">
+                We are a group of book enthusiasts who meet monthly 
+                to discuss our latest reads. Our club is open to all book lovers,
+                and we welcome new members with open arms.
+            </p>
+        </section>
+
+        <article id="mission">
+            <h2 data-i18n="sections.mission.title">Our Mission</h2>
+            <p data-i18n="sections.mission.description">
+                Our mission is to foster a love of reading and create a community
+                of book lovers who can share their thoughts and ideas.
+            </p>
+        </article>
+
+        <section id="books">
+            <h2 data-i18n="sections.books.title">Books We Love</h2>
+            <ul>
+                <li data-i18n="books.mockingbird">"To Kill a Mockingbird" by Harper Lee</li>
+                <li data-i18n="books.nineteenEightyFour">"1984" by George Orwell</li>
+                <li data-i18n="books.prideAndPrejudice">"Pride and Prejudice" by Jane Austen</li>
+                <li data-i18n="books.greatGatsby">"The Great Gatsby" by F. Scott Fitzgerald</li>
+            </ul>
+        </section>
+        
+        <section id="events">
+            <h2 data-i18n="sections.events.title">Upcoming Events</h2>
+            <p data-i18n="sections.events.description">
+                Join us for our <a href="./pages/events.html" data-i18n="sections.events.nextMeetingLink">next meeting</a>
+                on the 15th of July where we will be discussing "To Kill a Mockingbird".
+                We also have a special author talk scheduled for the 30th of August
+                with local author Jane Doe.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2 data-i18n="sections.contact.title">Contact Us</h2>
+            <p>
+                <span data-i18n="sections.contact.description">
+                    If you have any questions or would like to join our club, please use
+                </span>
+                <a href="./pages/contact.html" target="_self"
+                   data-i18n="sections.contact.formLink">this form</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+       <img src="./resources/images/bookclublogo.jpg"
+            alt="Book Club logo"
+            title="Book Club"
+            width="100"
+            height="100"
+            data-i18n-alt="footer.logoAlt"
+            data-i18n-title="footer.logoTitle">
+
+       <p data-i18n="footer.rights">
+           &copy; 2026 Book Club. All rights reserved.
+       </p>
+    </footer>
+</body>
+</html>
